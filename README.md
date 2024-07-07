@@ -1,4 +1,7 @@
 # OneboxExercise
+This repository contains an Angular project created as a technical test for the frontend engineer position at Onebox - Ticket Distribution System. 
+
+The test consists of a list of events displayed in the BillboardScreenComponent and the details of each event in the EventDetailsScreenComponent. By calling JSON files through HttpClient requests, the data is obtained and carried through Observables to the shopping cart with the available dates to choose from.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 

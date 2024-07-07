@@ -1,0 +1,27 @@
+<div id="event-details-container">
+  <div class="row mx-3 mx-md-0">
+    <div class="col-12 head-back-row">
+      <a [routerLink]="'/'">
+        <h5>{{'Volver'}}</h5>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <mat-card appearance="outlined" *ngIf="!eventDetail" class="not-found-card">
+        {{'EVENT INFO NOT FOUND'}}
+      </mat-card>
+      <mat-card appearance="outlined" *ngIf="eventDetail" class="row">
+        <div *ngFor="let session of eventDetail.sessions" class="col-12 available-date-row">
+          <span class="pe-0">
+            {{'Fecha:'}} {{session.date | date:'dd/MM/yyyy' }}, {{'Disponibilidad:'}} {{session.availability}}
+          </span>
+          <span class="ps-0 d-flex gap-2">
+            <a (click)="removeSessionItemFromCart(session)" class="plus-less-icon">-</a>
+            {{ getSessionsInCartByDate(session.date) }}
+            <a (click)="addSessionItemToCart(session)" class="plus-less-icon">+</a>
+          </span>
+        </div>
+      </mat-card>
+    </div>
+    <app-shopping-cart-view class="col-md-6 mt-2 mt-md-0"></app-shopping-cart-view>
+  </div>
+</div>

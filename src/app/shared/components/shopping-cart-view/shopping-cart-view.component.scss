@@ -1,0 +1,17 @@
+#cart-item{
+  h2.cart-item-title{
+    margin: 0;
+  }
+  .cart-item-date-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+  }
+}
+
+img.trash-icon{
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}

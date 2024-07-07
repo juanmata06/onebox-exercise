@@ -1,0 +1,39 @@
+#event-details-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  > *{
+    width: 700px;
+  }
+  .head-back-row{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .not-found-card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .available-date-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+mat-card{
+  min-height: 200px;
+  padding: 15px;
+  span{
+    font-size: 13px !important;
+  }
+  div.col-12{
+    padding: 0 0 15px 0;
+  }
+}
+
+a.plus-less-icon{
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--colorText);
+}

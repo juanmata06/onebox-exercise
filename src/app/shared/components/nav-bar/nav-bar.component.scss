@@ -1,0 +1,9 @@
+mat-toolbar {
+  &.mat-toolbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--navBarColor);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom: 40px;
+  }
+}

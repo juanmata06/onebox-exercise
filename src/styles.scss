@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+:root {
+  --navBarColor: #9ecee9;
+  --colorText: #3f8cb8;
+  --buttonColor: #3d8ab6;
+}
+
+h1 {
+  font-size: 16px !important;
+  font-weight: normal !important;
+}
+
+h2 {
+  font-size: 18px !important;
+  font-weight: normal !important;
+}
+
+h4 {
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  color: var(--colorText);
+}
+
+h5 {
+  font-size: 16px !important;
+  color: var(--colorText);
+}
+
+p {
+  font-size: 12px !important;
+}
+
+span {
+  font-size: 11px !important;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+b {
+  font-weight: 500;
+}
+
+
+::ng-deep mat-card .mat-mdc-card-outlined {
+  border-radius: 0;
+}

@@ -1,0 +1,18 @@
+<div class="row" *ngIf="cart.length">
+  <div *ngFor="let eventItem of cart" id="cart-item">
+    <h2 class="col-12 cart-item-title">
+      {{eventItem.event.title}}
+    </h2>
+    <div *ngFor="let dateItem of eventItem.datesSelected" class="col-12 cart-item-date-row">
+      <span class="pe-0">
+        {{dateItem.date | date:'dd/MM/yyyy'}}
+      </span>
+      <span class="ps-0 d-flex align-items-center gap-2">
+        x{{dateItem.quantity}}
+        <a (click)="deleteDateItems(eventItem.event.id, dateItem.date)">
+          <img src="assets/img/trash.png" class="trash-icon">
+        </a>
+      </span>
+    </div>
+  </div>
+</div>

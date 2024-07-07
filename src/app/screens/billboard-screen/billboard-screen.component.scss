@@ -1,0 +1,8 @@
+#billboard-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  > *{
+    max-width: 700px;
+  }
+}

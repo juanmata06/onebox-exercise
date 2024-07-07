@@ -1,0 +1,12 @@
+#error-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  > *{
+    width: 700px;
+  }
+  .head-back-row{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
